@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    
+    background-image: linear-gradient(to right, #5e63ff, #a14fff);
+    height: 100vh;
+    padding-top: 5vh;
+    
+}
+
+main{
+    /* border: 1px solid yellow; */
+    width: 90%;
+    margin: 0px auto;
+
+    height: 90vh;
+
+    position: relative;
+
+    box-shadow: 0px 0px 12px 12px #00000083 ;
+    border-radius: 30px;
+
+    background-color: white;
+
+}
+img{
+    width: 25px;
+}
+
+
+/* 
+==== Sol 1 ====
+display: inline-block; width
+
+==== Sol 2 ====
+float: left;
+float: right;
+*/
+
+#leftSide{
+    /* background-color: aquamarine;
+     */
+    background-image: linear-gradient(to left, #5e63ff, #a14fff);
+    width: 30%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    /* border-radius: 40px; */
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+
+    color: white;
+    padding: 80px 20px 15px;
+
+    text-align: center;
+}
+
+#leftSide > p{
+    margin: 50px 0px;
+    font-size: small;
+}
+
+#leftSide > a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid #a5a8fd;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+#leftSide > a:hover{
+    box-shadow: 0px 0px 5px 5px rgba(207, 209, 252, 0.603);
+}
+
+#rightSide{
+    
+    width: 70%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+}
+
+#rightSide > h1{
+    text-align: center;
+    color: gray;
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-weight: lighter;
+}
+
+#rightSide img{
+    vertical-align: middle;
+    
+}
+
+#rightSide fieldset{
+    border: none;
+    box-shadow: 0px 0px 5px 3px gray;
+    width: 70%;
+    margin: 20px auto;
+}
+
+#rightSide fieldset > input{
+    display: block;
+    margin: 15px auto;
+    width: 70%;
+    border: none;
+    outline: none;
+    
+    border-bottom: 2px solid gray;
+    padding: 10px 0px;
+
+}
+
+#rightSide fieldset > input:focus{
+    border-bottom-color: darkorchid;
+}
+
+#rightSide fieldset > label{
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+    font-size: smaller;
+    color: gray;
+}
+
+/* form > button, form > a {} */
+
+form > :is(button, a) {
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+}
+
+form > button{
+    padding: 8px 30px;
+    background-color: white;
+    color: #5e63ff;
+    border: 1px solid #5e63ff;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+form > button:hover{
+    background-color: #5e63ff;
+    color: white;
+}
+
+form > a{
+    text-decoration: none;
+    color: gray;
+}
